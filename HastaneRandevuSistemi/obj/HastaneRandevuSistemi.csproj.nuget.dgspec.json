@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bekir Can\\Desktop\\ödev\\HastaneRandevuSistemi 1\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj": {}
+    "C:\\Users\\Bekir Can\\Documents\\GitHub\\Hastane-Randevu-Sistemi\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bekir Can\\Desktop\\ödev\\HastaneRandevuSistemi 1\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj": {
+    "C:\\Users\\Bekir Can\\Documents\\GitHub\\Hastane-Randevu-Sistemi\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bekir Can\\Desktop\\ödev\\HastaneRandevuSistemi 1\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj",
+        "projectUniqueName": "C:\\Users\\Bekir Can\\Documents\\GitHub\\Hastane-Randevu-Sistemi\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj",
         "projectName": "HastaneRandevuSistemi",
-        "projectPath": "C:\\Users\\Bekir Can\\Desktop\\ödev\\HastaneRandevuSistemi 1\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj",
+        "projectPath": "C:\\Users\\Bekir Can\\Documents\\GitHub\\Hastane-Randevu-Sistemi\\HastaneRandevuSistemi\\HastaneRandevuSistemi.csproj",
         "packagesPath": "C:\\Users\\Bekir Can\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bekir Can\\Desktop\\ödev\\HastaneRandevuSistemi 1\\HastaneRandevuSistemi\\obj\\",
+        "outputPath": "C:\\Users\\Bekir Can\\Documents\\GitHub\\Hastane-Randevu-Sistemi\\HastaneRandevuSistemi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bekir Can\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,11 +50,11 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.13, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.13, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
