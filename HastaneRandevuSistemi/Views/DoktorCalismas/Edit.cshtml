@@ -1,0 +1,44 @@
+﻿@model HastaneRandevuSau.Models.DoktorCalisma
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Admin çalışma saatlerini güncelleyebilir</h1>
+
+<h4>DoktorCalisma</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CalismaId" />
+            <div class="form-group">
+                <label asp-for="DoktorId" class="control-label"></label>
+                <select asp-for="DoktorId" class="form-control" asp-items="ViewBag.DoktorId"></select>
+                <span asp-validation-for="DoktorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gun" class="control-label"></label>
+                <input asp-for="Gun" class="form-control" />
+                <span asp-validation-for="Gun" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mesaiAraligi" class="control-label"></label>
+                <input asp-for="mesaiAraligi" class="form-control" />
+                <span asp-validation-for="mesaiAraligi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Çalışma saatleri listesine geri dön</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

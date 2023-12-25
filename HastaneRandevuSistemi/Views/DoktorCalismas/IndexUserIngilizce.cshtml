@@ -1,0 +1,41 @@
+﻿@model IEnumerable<HastaneRandevuSau.Models.DoktorCalisma>
+
+@{
+    ViewData["Title"] = "IndexUserIngilizce";
+}
+
+<h1>Doctor Working Days</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Doctor
+            </th>
+            <th>
+                Day
+           </th>
+            <th>
+                Working Interval
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doktor.DoktorAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gun)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mesaiAraligi)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

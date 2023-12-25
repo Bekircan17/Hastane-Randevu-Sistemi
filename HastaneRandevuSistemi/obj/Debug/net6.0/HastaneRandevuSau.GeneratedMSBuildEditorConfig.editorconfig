@@ -1,0 +1,209 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HastaneRandevuSau
+build_property.RootNamespace = HastaneRandevuSau
+build_property.ProjectDir = C:\Users\Bekir Can\Desktop\HastaneRandevuSau\HastaneRandevuSau\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Bekir Can\Desktop\HastaneRandevuSau\HastaneRandevuSau
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/IndexUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcSW5kZXhVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/DoktorCalismas/IndexUserIngilizce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yQ2FsaXNtYXNcSW5kZXhVc2VySW5naWxpemNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/IndexUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xJbmRleFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Doktors/IndexUserIngilizce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9rdG9yc1xJbmRleFVzZXJJbmdpbGl6Y2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/CreateUserIngilizce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXENyZWF0ZVVzZXJJbmdpbGl6Y2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Iletisims/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSWxldGlzaW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Ingilizce/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5naWxpemNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/CreateUserEnglish.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcQ3JlYXRlVXNlckVuZ2xpc2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/IndexUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcSW5kZXhVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Randevus/IndexUserIngilizce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dXNcSW5kZXhVc2VySW5naWxpemNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bekir Can/Desktop/HastaneRandevuSau/HastaneRandevuSau/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6bhk9ymurm

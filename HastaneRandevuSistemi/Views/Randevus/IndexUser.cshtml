@@ -1,0 +1,60 @@
+﻿@model IEnumerable<HastaneRandevuSau.Models.Randevu>
+
+@{
+    ViewData["Title"] = "IndexUser";
+}
+
+<h1>Dolu randevuları buradan görüntüleyebilirsiniz.</h1>
+
+<p>
+    <a asp-action="Create">Randevu oluştur</a>
+</p>
+<table class="table table-dark">
+    <thead>
+        <tr>
+
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.HastaAdi)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Doktor)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.RandevuAyi)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.RandevuGunu)
+            </th>
+            <th scope="col">
+
+                @Html.DisplayNameFor(model => model.RandevuSaati)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.HastaAdi)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Doktor.DoktorAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RandevuAyi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RandevuGunu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RandevuSaati)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

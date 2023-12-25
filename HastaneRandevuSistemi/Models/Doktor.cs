@@ -1,6 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Drawing;
+using System.Xml.Linq;
 
-namespace HastaneRandevuSistemi.Models
+namespace HastaneRandevuSau.Models
 {
     public class Doktor
     {
@@ -8,20 +11,20 @@ namespace HastaneRandevuSistemi.Models
         public int DoktorId { get; set; }
 
         [Required]
-        [Display(Name ="Doktor Adı")]
+        [Display(Name = "Doktor Adı")]
         public string DoktorAdi { get; set; }
 
         [Required]
         [Display(Name = "Doktor Soyadı")]
         public string DoktorSoyadi { get; set; }
-        
-        public int PoliklinikId { get; set; }
-        public Poliklinik Poliklinik { get; set; }  
 
+        [Required(ErrorMessage = "PoliklinikAdi")]
+        public string uzmanlikAlani { get; set; }
 
         [Phone]
-        public string DoktorTelefon { get;set; }
+        public string DoktorTelefon { get; set; }
 
-
+        public ICollection<Randevu>? Randevular { get; set; }
+        public ICollection<DoktorCalisma>? DoktorCalisma { get; set; }
     }
 }

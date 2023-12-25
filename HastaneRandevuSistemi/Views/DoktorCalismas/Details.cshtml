@@ -1,0 +1,36 @@
+﻿@model HastaneRandevuSau.Models.DoktorCalisma
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detayları görüntüleyebilirsiniz</h1>
+
+<div>
+    <h4>DoktorCalisma</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Doktor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Doktor.DoktorAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gun)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gun)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.mesaiAraligi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.mesaiAraligi)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CalismaId">Edit</a> |
+    <a asp-action="Index">Çalışma saatleri listesine geri dön</a>
+</div>

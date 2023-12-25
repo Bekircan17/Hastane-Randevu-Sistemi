@@ -1,0 +1,102 @@
+﻿@model HastaneRandevuSau.Models.Randevu
+
+@{
+    ViewData["Title"] = "Create";
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<h1>Randevu oluşturun</h1>
+<p>Lütfen dolu randevuları kontrol ettikten sonra randevunuzu oluşturunuz. Eğer dolu bir randevuyu seçerseniz randevunuz iptal edilecektir.</p>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TcNo" class="control-label"></label>
+                <input asp-for="TcNo" class="form-control" />
+                <span asp-validation-for="TcNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HastaAdi" class="control-label"></label>
+                <input asp-for="HastaAdi" class="form-control" />
+                <span asp-validation-for="HastaAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HastaSoyAdi" class="control-label"></label>
+                <input asp-for="HastaSoyAdi" class="form-control" />
+                <span asp-validation-for="HastaSoyAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IletisimNumarası" class="control-label"></label>
+                <input asp-for="IletisimNumarası" class="form-control" />
+                <span asp-validation-for="IletisimNumarası" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoktorId" class="control-label"></label>
+                <select asp-for="DoktorId" class="form-control" asp-items="ViewBag.DoktorId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="RandevuAyi" class="control-label"></label>
+                <select asp-for="RandevuAyi" class="form-control">
+                    <option value="1">Ocak</option>
+                    <option value="2">Şubat</option>
+                    <option value="3">Mart</option>
+                    <option value="4">Nisan</option>
+                    <option value="5">Mayıs</option>
+                    <option value="6">Haziran</option>
+                    <option value="7">Temmuz</option>
+                    <option value="8">Ağustos</option>
+                    <option value="9">Eylül</option>
+                    <option value="10">Ekim</option>
+                    <option value="11">Kasım</option>
+                    <option value="12">Aralık</option>
+                </select>
+                
+                <span asp-validation-for="RandevuAyi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RandevuGunu" class="control-label"></label>
+                <select asp-for="RandevuGunu" class="form-control" id="RandevuGunuSelect">
+                    @for (int i = 1; i <= 31; i++)
+                    {
+                        <option value="@i">@i</option>
+                    }
+                </select>
+                <span asp-validation-for="RandevuGunu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RandevuSaati" class="control-label"></label>
+                <select asp-for="RandevuSaati" class="form-control">
+                    <option value="10.00">10.00</option>
+                    <option value="11.00">11.00</option>
+                    <option value="13.00">13.00</option>
+                    <option value="14.00">14.00</option>
+                    <option value="15.00">15.00</option>
+                    <option value="16.00">16.00</option>
+                    <option value="17.00">17.00</option>
+                </select>
+                <span asp-validation-for="RandevuSaati" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Randevu listesine geri dön</a>
+</div>
+
+
+
+
+
+
+

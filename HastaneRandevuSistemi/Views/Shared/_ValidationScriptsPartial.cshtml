@@ -1,2 +1,26 @@
 ﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    function updateDaysOptions(select) {
+        var selectedMonth = select.value;
+        var daysSelect = document.getElementById("RandevuGunuSelect");
+        var daysCount = 31;
+
+        if (selectedMonth == 2) {
+            // Şubat ayı seçildiyse gün sayısını 28'e düzenle
+            daysCount = 28;
+        } else if (selectedMonth == 4 || selectedMonth == 6 || selectedMonth == 9 || selectedMonth == 11) {
+            // Nisan, Haziran, Eylül, Kasım ayları seçildiyse gün sayısını 30'a düzenle
+            daysCount = 30;
+        }
+
+        // Seçenekleri güncelle
+        daysSelect.innerHTML = "";
+        for (var i = 1; i <= daysCount; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text = i;
+            daysSelect.appendChild(option);
+        }
+    }
+</script>

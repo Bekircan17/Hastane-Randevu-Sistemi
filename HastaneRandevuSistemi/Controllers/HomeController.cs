@@ -1,8 +1,8 @@
-﻿using HastaneRandevuSistemi.Models;
+﻿using HastaneRandevuSau.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace HastaneRandevuSistemi.Controllers
+namespace HastaneRandevuSau.Controllers
 {
     public class HomeController : Controller
     {

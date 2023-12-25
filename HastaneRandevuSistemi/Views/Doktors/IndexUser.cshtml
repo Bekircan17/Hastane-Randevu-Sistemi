@@ -1,0 +1,48 @@
+﻿@model IEnumerable<HastaneRandevuSau.Models.Doktor>
+
+@{
+    ViewData["Title"] = "IndexUser";
+}
+
+
+<h1 class="h1class2">Doktorlarımızı buradan görebilirsiniz</h1>
+</hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DoktorAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoktorSoyadi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uzmanlikAlani)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoktorTelefon)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoktorAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoktorSoyadi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uzmanlikAlani)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoktorTelefon)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

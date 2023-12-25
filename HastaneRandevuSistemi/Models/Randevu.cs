@@ -1,15 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
-namespace HastaneRandevuSistemi.Models
+namespace HastaneRandevuSau.Models
 {
     public class Randevu
     {
         [Key]
         public int RandevuId { get; set; }
 
-        public int PoliklinikId { get; set; }
-        public Poliklinik Poliklinik { get; set; }
+        [Required(ErrorMessage ="Hastanızın tcNosunu girmelisiniz")]
+        public string TcNo { get; set; }
 
+        [Required(ErrorMessage = "Hastanızın Adini girmelisiniz")]
+        public string HastaAdi { get; set; }
+
+        [Required(ErrorMessage = "Hastanızın Adini girmelisiniz")]
+
+        public string HastaSoyAdi { get; set; }
+
+        [Required(ErrorMessage = "Bir iletişim numarası girmelisiniz")]
+
+        public string IletisimNumarası { get; set; }
         public int DoktorId { get; set; }
         public Doktor Doktor { get; set; }
 
@@ -21,11 +32,8 @@ namespace HastaneRandevuSistemi.Models
         [Display(Name = "Randevu Gunu")]
         public string RandevuGunu { get; set; } // 1-Pazartesi 2-Salı 3-Çarşamba 4-Perşembe 5-Cuma
 
-        [Required (ErrorMessage ="Randevu Saati Seçmeden Randevu Oluşturamazsınız")]
-        [Display(Name ="Randevu Saati")]
+        [Required(ErrorMessage = "Randevu Saati Seçmeden Randevu Oluşturamazsınız")]
+        [Display(Name = "Randevu Saati")]
         public string RandevuSaati { get; set; } // 10.00 11.00 13.00 14.00 15.00 16.00 17.00
-
-
-
     }
 }

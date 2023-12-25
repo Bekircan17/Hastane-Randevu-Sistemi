@@ -1,0 +1,41 @@
+﻿@model IEnumerable<HastaneRandevuSau.Models.DoktorCalisma>
+
+@{
+    ViewData["Title"] = "IndexUser";
+}
+
+<p>Doktorlarımızın çalışma saatlerine göre uygun randevu arayabilirsiniz</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Doktor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gun)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.mesaiAraligi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doktor.DoktorAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gun)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.mesaiAraligi)
+            </td>
+           
+        </tr>
+}
+    </tbody>
+</table>

@@ -3,29 +3,79 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HastaneRandevuSistemi</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - HastaneRandevuSau</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HastaneRandevuSistemi.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HastaneRandevuSau.styles.css" asp-append-version="true" />
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: #343a40;
+        }
+        
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        .navbar-toggler-icon {
+            background-color: #ffffff;
+        }
+        
+        .nav-link {
+            color: #343a40;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #007bff;
+        }
+        
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HastaneRandevuSistemi</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HastaneRandevuSau</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                       
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Doktors" asp-action="IndexUser">Doktorlar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="DoktorCalismas" asp-action="IndexUser">Doktor Çalışma Saatleri</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Randevus" asp-action="IndexUser">Dolu Randevular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Randevus" asp-action="Create">Randevu Oluştur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Iletisims" asp-action="Create">Destek Talebi Oluştur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Ingilizce" asp-action="Index">English</a>
                         </li>
                     </ul>
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
@@ -36,13 +86,14 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer">
         <div class="container">
-            &copy; 2023 - HastaneRandevuSistemi - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - HastaneRandevuSau - <a asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik</a>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

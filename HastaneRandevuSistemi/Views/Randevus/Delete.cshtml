@@ -1,0 +1,69 @@
+﻿@model HastaneRandevuSau.Models.Randevu
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Admin-Randevu sil</h1>
+
+<h3>Emin misin</h3>
+<div>
+    <h4>Randevu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TcNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TcNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HastaAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HastaAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HastaSoyAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HastaSoyAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IletisimNumarası)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IletisimNumarası)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Doktor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Doktor.DoktorAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RandevuAyi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RandevuAyi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RandevuGunu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RandevuGunu)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RandevuSaati)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RandevuSaati)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="RandevuId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Randevu listesine geri dön</a>
+    </form>
+</div>
