@@ -14,8 +14,10 @@ internal class Program
             options.UseSqlServer(connectionString));
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-            .AddRoles<IdentityRole>()
+        builder.Services.AddIdentity<IdentityUser,IdentityRole>(options => { options.SignIn.RequireConfirmedAccount = false;options.Password.RequireNonAlphanumeric = false;options.Password.RequireLowercase = false;options.Password.RequireUppercase = false;options.Password.RequireDigit = false;options.Password.RequiredLength = 3;
+        }
+        )
+
             .AddEntityFrameworkStores<ApplicationDbContext>();
         builder.Services.AddControllersWithViews();
 
@@ -74,8 +76,8 @@ internal class Program
         using (var scope = app.Services.CreateScope())
         {
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
-            string email = "221200301@sakarya.edu.tr";
-            string password = "sau";
+            string email = "221210250@sakarya.edu.tr";
+            string password = "Sau123*";
             if (await userManager.FindByEmailAsync(email)==null)
             {
                 var user=new IdentityUser();
