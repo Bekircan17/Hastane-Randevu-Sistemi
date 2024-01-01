@@ -21,3 +21,81 @@ h1class2{
     padding:15px;
 
 }
+.randevu_baslik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randevu_p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:blue;
+}
+
+.row_p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randevu_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 2s;
+    border-radius:100px;
+}
+
+    .randevu_button:hover {
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        transition-duration: 2s;
+    }
+
+.randevu_i{
+    color:red;
+    padding:5px;
+}
+
+.ana_ul{
+    padding:20px;
+    margin:20px;
+}
+
+    .ana_ul li {
+        padding: 10px;
+        margin: 10px;
+    }
+
+.ana_p2{
+    color:blue;
+}
+
+.h1class2{
+    padding:10px;
+    margin:10px;
+}
+
+.doktor_saat_p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+}
+
+.olustur_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    color:blue;
+}
+
+.randevu_baslik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

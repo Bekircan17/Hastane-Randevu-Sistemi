@@ -9,11 +9,11 @@
     }
 }
 
-<h1>Randevu oluşturun</h1>
-<p>Lütfen dolu randevuları kontrol ettikten sonra randevunuzu oluşturunuz. Eğer dolu bir randevuyu seçerseniz randevunuz iptal edilecektir.</p>
+<h1 class="randevu_baslik">Randevu oluşturun</h1>
+<p class="randevu_p">Lütfen dolu randevuları kontrol ettikten sonra randevunuzu oluşturunuz. Eğer dolu bir randevuyu seçerseniz randevunuz <span class="randevu_i">iptal</span>edilecektir.</p>
 
 <hr />
-<div class="row">
+<div class="row row_p">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -84,7 +84,7 @@
                 <span asp-validation-for="RandevuSaati" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Randevu Oluştur" class="btn btn-primary randevu_button" />
             </div>
         </form>
     </div>

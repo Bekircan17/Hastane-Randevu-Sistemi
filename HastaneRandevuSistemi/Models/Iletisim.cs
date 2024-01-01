@@ -5,7 +5,7 @@ namespace HastaneRandevuSau.Models
     public class Iletisim
     {
         [Key]
-        public string IletisimId { get; set; }
+        public int IletisimId { get; set; }
 
         [Required(ErrorMessage ="Boş geçmeyiniz")]
         [Display(Name ="Randevu Numarası")]

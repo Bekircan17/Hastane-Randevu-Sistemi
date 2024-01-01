@@ -7,15 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HastaneRandevuSau.Data;
 using HastaneRandevuSau.Models;
-using Microsoft.AspNetCore.Authorization;
-using System.Data;
 
 namespace HastaneRandevuSau.Controllers
 {
-    [Authorize]
     public class IletisimsController : Controller
     {
-        
         private readonly ApplicationDbContext _context;
 
         public IletisimsController(ApplicationDbContext context)
@@ -24,7 +20,6 @@ namespace HastaneRandevuSau.Controllers
         }
 
         // GET: Iletisims
-        [Authorize(Roles = "yetkili")]
         public async Task<IActionResult> Index()
         {
               return _context.Iletisim != null ? 
@@ -33,8 +28,7 @@ namespace HastaneRandevuSau.Controllers
         }
 
         // GET: Iletisims/Details/5
-        [Authorize(Roles = "yetkili")]
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Iletisim == null)
             {
@@ -58,36 +52,23 @@ namespace HastaneRandevuSau.Controllers
         }
 
         // POST: Iletisims/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IletisimId,RandevuNumarasi,Mesaj,IletisimNumarasi")] Iletisim iletisim)
         {
-           
+            if (ModelState.IsValid)
+            {
                 _context.Add(iletisim);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            
-            
-        }
-        public IActionResult CreateUserIngilizce()
-        {
-            return View();
+            }
+            return View(iletisim);
         }
 
-        // POST: Iletisims/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateUserIngilizce([Bind("IletisimId,RandevuNumarasi,Mesaj,IletisimNumarasi")] Iletisim iletisim)
-        {
-          
-                _context.Add(iletisim);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-         
-        }
-        [Authorize(Roles = "yetkili")]
         // GET: Iletisims/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Iletisim == null)
             {
@@ -103,10 +84,11 @@ namespace HastaneRandevuSau.Controllers
         }
 
         // POST: Iletisims/Edit/5
-        [Authorize(Roles = "yetkili")]
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("IletisimId,RandevuNumarasi,Mesaj,IletisimNumarasi")] Iletisim iletisim)
+        public async Task<IActionResult> Edit(int id, [Bind("IletisimId,RandevuNumarasi,Mesaj,IletisimNumarasi")] Iletisim iletisim)
         {
             if (id != iletisim.IletisimId)
             {
@@ -137,8 +119,7 @@ namespace HastaneRandevuSau.Controllers
         }
 
         // GET: Iletisims/Delete/5
-        [Authorize(Roles = "yetkili")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Iletisim == null)
             {
@@ -158,8 +139,7 @@ namespace HastaneRandevuSau.Controllers
         // POST: Iletisims/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "yetkili")]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Iletisim == null)
             {
@@ -175,7 +155,7 @@ namespace HastaneRandevuSau.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool IletisimExists(string id)
+        private bool IletisimExists(int id)
         {
           return (_context.Iletisim?.Any(e => e.IletisimId == id)).GetValueOrDefault();
         }
